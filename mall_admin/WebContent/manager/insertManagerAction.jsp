@@ -22,11 +22,12 @@
 	}
 	// 2-2. 입력
 	ManagerDao.insertManager(managerId, managerPw, managerName);
+	response.sendRedirect(request.getContextPath()+"/manager/managerList.jsp");
 	// 3. 출력
 %>
-	<div>
+<%-- 	<div>
 		매니저 등록 성공. 승인 후 사용 가능합니다.
 		<a href="<%=request.getContextPath()%>/adminIndex.jsp">관리자 홈</a>
-	</div>
+	</div> --%>
 </body>
 </html>

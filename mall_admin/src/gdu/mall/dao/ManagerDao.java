@@ -28,6 +28,7 @@ public class ManagerDao {
 			Manager m = new Manager();
 			m.setManagerId(rs.getString("managerId"));
 			m.setManagerDate(rs.getString("managerDate"));
+			
 			list.add(m);
 		}
 
