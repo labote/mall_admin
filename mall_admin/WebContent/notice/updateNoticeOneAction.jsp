@@ -3,6 +3,8 @@
 <%@ page import="gdu.mall.dao.*" %>
 <%@ page import="gdu.mall.vo.*" %>
 <%
+	request.setCharacterEncoding("UTF-8");
+
 	// 레벨이 2보다 작으면 권한이 없으므로 adminIndex 페이지로 돌아간다.
 	Manager manager = (Manager)session.getAttribute("sessionManager");
 	if(manager==null){

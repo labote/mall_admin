@@ -183,8 +183,8 @@
 										<tr>
 											<th>clientEmail</th>
 											<th>clientDate</th>
-											<th>수정</th>
-											<th>삭제</th>
+											<th>Update</th>
+											<th>Delete</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -195,8 +195,8 @@
 										<tr>
 											<td><%=c.getClientMail()%></td>
 											<td><%=c.getClientDate()%></td>
-											<td><a href="<%=request.getContextPath()%>/client/updateClientForm.jsp?clientNo=<%=c.getClientNo()%>"><button type="button" class="btn btn-primary btn-sm">수정</button></a></td>
-											<td><a href="<%=request.getContextPath()%>/client/deleteClientAction.jsp?clientNo=<%=c.getClientNo()%>"><button type="button" class="btn btn-primary btn-sm">삭제</button></a></td>
+											<td><a href="<%=request.getContextPath()%>/client/updateClientForm.jsp?clientNo=<%=c.getClientNo()%>"><button type="button" class="btn btn-primary btn-sm">Update</button></a></td>
+											<td><a href="<%=request.getContextPath()%>/client/deleteClientAction.jsp?clientNo=<%=c.getClientNo()%>"><button type="button" class="btn btn-primary btn-sm">Delete</button></a></td>
 										</tr>
 									<%
 										}

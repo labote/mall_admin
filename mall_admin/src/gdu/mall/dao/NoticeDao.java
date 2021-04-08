@@ -80,13 +80,13 @@ public class NoticeDao {
 		String sql = ""; 
 				
 		if(searchNotice.equals("")) { // 검색어가 없으면
-			sql = "SELECT notice_no noticeNo, notice_title noticeTitle, notice_content noticeContent, date_format(notice_date,'%Y-%m-%d') noticeDate, manager_id managerId from notice limit ?, ?"; 
+			sql = "SELECT notice_no noticeNo, notice_title noticeTitle, notice_content noticeContent, date_format(notice_date,'%Y-%m-%d') noticeDate, manager_id managerId from notice order by noticeDate desc limit ?, ?"; 
 			stmt = conn.prepareStatement(sql); 
 			stmt.setInt(1, beginRow); 
 			stmt.setInt(2,rowPerPage);
 			 
 		} else {
-			sql = "SELECT notice_no noticeNo, notice_title noticeTitle, notice_content noticeContent, date_format(notice_date,'%Y-%m-%d') noticeDate, manager_id managerId from notice where notice_title like ? limit ?, ?";
+			sql = "SELECT notice_no noticeNo, notice_title noticeTitle, notice_content noticeContent, date_format(notice_date,'%Y-%m-%d') noticeDate, manager_id managerId from notice where notice_title like ? order by noticeDate desc limit ?, ?";
 			stmt = conn.prepareStatement(sql);
 			stmt.setString(1, "%"+searchNotice+"%");
 			stmt.setInt(2, beginRow);

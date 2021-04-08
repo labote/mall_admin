@@ -123,7 +123,7 @@
 				<a class="sidebar-toggle d-flex">
          			 <i class="hamburger align-self-center"></i>
        			</a>
-				<form class="d-none d-sm-inline-block" action="<%=request.getContextPath()%>/ebook/ebookList.jsp" method="post">
+<%-- 				<form class="d-none d-sm-inline-block" action="<%=request.getContextPath()%>/ebook/ebookList.jsp" method="post">
 					<div class="input-group input-group-navbar">
 						<input type="hidden" name="rowPerPage" value="<%=rowPerPage%>">
 						<input type="text" class="form-control" placeholder="searchTitle" aria-label="SearchTitle" name="searchTitle">
@@ -131,7 +131,7 @@
 			            	<i class="align-middle" data-feather="search"></i>
 			            </button>
 					</div>
-				</form>
+				</form> --%>
 				<div class="navbar-collapse collapse">
 					<ul class="navbar-nav navbar-align">
 						<li class="nav-item dropdown">

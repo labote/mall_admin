@@ -182,8 +182,8 @@
 											<th>managerId</th>
 											<th>managerName</th>
 											<th>managerDate</th>
-											<th>수정</th>
-											<th>삭제</th>
+											<th>Update</th>
+											<th>Delete</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -213,12 +213,12 @@
 																	}
 																%>
 															</select>
-															<button type="submit" class="btn btn-primary btn-sm">수정</button>
+															<button type="submit" class="btn btn-primary btn-sm">Update</button>
 														</form>
 													</td>
 													<td>
 														<%-- <a href="<%=request.getContextPath()%>/manager/deleteManagerAction.jsp?managerNo=<%=m.managerNo%>"><button type="button">삭제</button></a> --%>
-														<button onclick = "location.href = '../manager/deleteManagerAction.jsp?managerNo=<%=m.getManagerNo()%>'"  type="button" class="btn btn-primary btn-sm">삭제</button>
+														<button onclick = "location.href = '../manager/deleteManagerAction.jsp?managerNo=<%=m.getManagerNo()%>'"  type="button" class="btn btn-primary btn-sm">Delete</button>
 													</td>
 												</tr>
 										<%			

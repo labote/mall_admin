@@ -175,7 +175,7 @@
 											%>
 										</select>
 										<button type="submit" class="btn btn-primary btn-sm">보기</button>
-										<a href="<%=request.getContextPath()%>/notice/insertNoticeForm.jsp?rowPerPage=<%=rowPerPage%>"><button type="button" class="btn btn-primary btn-sm float-right">공지 쓰기</button></a>
+										<a href="<%=request.getContextPath()%>/notice/insertNoticeForm.jsp?rowPerPage=<%=rowPerPage%>"><button type="button" class="btn btn-primary btn-sm float-right">Register</button></a>
 									</form>
 								</div>
 								<table class="table table-hover my-0 table-bordered">

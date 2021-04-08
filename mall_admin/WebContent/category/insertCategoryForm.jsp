@@ -143,8 +143,8 @@
 									</div>
 									<br>
 									<div>
-										<button type="submit" class="btn btn-primary btn-sm">카테고리 등록</button>
-										<button type="button" onclick="history.back()" class="btn btn-primary btn-sm float-right">취소</button>
+										<button type="submit" class="btn btn-primary btn-sm">Register</button>
+										<button type="button" onclick="history.back()" class="btn btn-primary btn-sm float-right">Cancel</button>
 									</div>
 								</div>
 							</div>

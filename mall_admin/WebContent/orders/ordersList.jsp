@@ -222,7 +222,7 @@
 															%>
 															</select>
 															<br>
-															<button type="submit" class="btn btn-primary btn-sm">수정</button>
+															<button type="submit" class="btn btn-primary btn-sm">Update</button>
 														</form>
 													</td>
 												</tr>

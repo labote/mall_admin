@@ -126,6 +126,7 @@
 					
 					<div class="row">
 						<form action="<%=request.getContextPath()%>/ebook/insertEbookAction.jsp" method="post">
+						<input type="hidden" name = "rowPerPage" value="<%=rowPerPage%>">
 						<div class="col-12 col-xl-6">
 							<div class="card flex-fill">
 								<div class="card-header">

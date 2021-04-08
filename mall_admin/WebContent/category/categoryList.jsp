@@ -131,8 +131,8 @@
 									<thead>
 										<tr>
 											<th>categoryName</th>
-											<th>categoryWeight(수정)</th>
-											<th>삭제</th>
+											<th>categoryWeight</th>
+											<th>Delete</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -159,10 +159,10 @@
 																	}
 																%>
 															</select>
-															<button type="submit" class="btn btn-primary btn-sm">수정</button>
+															<button type="submit" class="btn btn-primary btn-sm">Update</button>
 														</form>
 													</td>
-													<td><a href="<%=request.getContextPath()%>/category/deleteCategoryAction.jsp?categoryName=<%=c.getCategoryName()%>"><button type="button" class="btn btn-primary btn-sm">삭제</button></a></td>
+													<td><a href="<%=request.getContextPath()%>/category/deleteCategoryAction.jsp?categoryName=<%=c.getCategoryName()%>"><button type="button" class="btn btn-primary btn-sm">Delete</button></a></td>
 												</tr>
 										<%
 											}
@@ -172,7 +172,7 @@
 							</div>
 						</div>
 					</div>
-					<a href="<%=request.getContextPath()%>/category/insertCategoryForm.jsp"><button type="button" class="btn btn-primary btn-sm">카테고리 추가</button></a>
+					<a href="<%=request.getContextPath()%>/category/insertCategoryForm.jsp"><button type="button" class="btn btn-primary btn-sm">Category register</button></a>
 				</div>
 			</main>
 
